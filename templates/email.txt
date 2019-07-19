@@ -1,0 +1,1 @@
+点击右边链接以完成激活，<a href="http://127.0.0.1:8000/user/activate/?token={{token}}">激活

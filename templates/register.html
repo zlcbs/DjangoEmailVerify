@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>register</title>
+</head>
+<body>
+<form class="form" action="{% url 'user:register' %}" method="post">
+    {% csrf_token %}
+    <table>
+        {{ form.as_p }}
+    </table>
+    <button type="submit" class="btn btn-primary btn-block">注册
+    </button>
+    <input type="hidden" name="next" value="{{ next }}"/>
+</form>
+</body>
+</html>
